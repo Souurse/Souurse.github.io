@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Как ходят шахматные фигуры и скрипты JavaScript">
+  <meta name="keywords" content="шахматные фигуры, javascript">
+  <meta name="author" content="Лексина Дарья">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Шахматы - игра и скрипты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Игра и скрипты</h1>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="history.html">История</a>
+    <a href="play.html">Игра и скрипты</a>
+  </nav>
+</header>
+<main>
+  <h2 id="top">Фигуры</h2>
+  <img src="img/corol.jpg" alt="Король" class="left" width="100">
+  <p>Каждая фигура ходит по-своему. Кратко о фигурах - в таблице ниже.
+  Правила можно посмотреть на <a href="https://ru.wikipedia.org/wiki/Правила_шахмат" target="_blank">внешнем сайте</a>.</p>
+  <div class="clear"></div>
+
+  <table>
+    <tr><th>Фигура</th><th>Как ходит</th><th>Ценность</th></tr>
+    <tr><td>Пешка</td><td>Вперёд на 1 клетку</td><td>1</td></tr>
+    <tr><td>Конь</td><td>Буквой «Г»</td><td>3</td></tr>
+    <tr><td>Слон</td><td>По диагонали</td><td>3</td></tr>
+    <tr><td>Ладья</td><td>По прямой</td><td>5</td></tr>
+    <tr><td>Ферзь</td><td>По прямой и диагонали</td><td>9</td></tr>
+  </table>
+
+  <ul>
+    <li><a href="#scripts">Перейти к скриптам</a></li>
+    <li><a href="index.html">Вернуться на главную</a></li>
+  </ul>
+
+  <h2 id="scripts">Скрипты JavaScript</h2>
+
+  <div class="box">
+    <h3>1. Удалить слова длиннее 7 букв</h3>
+    <input type="text" id="text1" value="Шахматы очень интересная и полезная игра">
+    <button onclick="removeLongWords()">Выполнить</button>
+  </div>
+
+  <div class="box">
+    <h3>2. Самая частая буква</h3>
+    <input type="text" id="text2" value="Я люблю играть в шахматы">
+    <button onclick="findTopLetter()">Выполнить</button>
+  </div>
+
+  <div class="box">
+    <h3>3. Цвет фона</h3>
+    <button onclick="changeColor('#f5f5f5')">Серый</button>
+    <button onclick="changeColor('#d6eaf8')">Голубой</button>
+    <button onclick="changeColor('#d5f5e3')">Зелёный</button>
+    <button onclick="changeColor('#fcf3cf')">Жёлтый</button>
+  </div>
+
+  <div class="box">
+    <h3>4. Часы в заголовке</h3>
+    <p>Время идёт в заголовке вкладки браузера.</p>
+  </div>
+  <p><a href="#top">Наверх</a></p>
+</main>
+<footer>Лабораторная работа №2</footer>
+<script src="script.js"></script>
+</body>
+</html>
